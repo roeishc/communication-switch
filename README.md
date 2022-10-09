@@ -7,11 +7,11 @@ In Visual Studio, right-click the project -> properties -> under configuration p
 In the input data files, portX.in, each row represesnts a data packet in the following format:
 Time, Da, Sa, Prio, Data_length, Data, Checksum
 * Time - unsigned int. Packet's arrival time,
-* Da - byte (char). Destination address.
-* Sa - byte (char). Source address.
-* Prio - byte (char). Packet's priority, with 0 being highest priority, 1 being lowest priority.
-* Data_length - byte (char). Data array's length (number of elements in the array).
-* Checksum - byte (char). Calculated as a bitwise XOR operation between all the bits in the packet, except for the Time field.
+* Da - byte (unsgined char). Destination address.
+* Sa - byte (unsgined char). Source address.
+* Prio - byte (unsgined char). Packet's priority, with 0 being highest priority, 1 being lowest priority.
+* Data_length - byte (unsgined char). Data array's length (number of elements in the array).
+* Checksum - byte (unsgined char). Calculated as a bitwise XOR operation between all the bits in the packet, except for the Time field.
 
 In each portX.in file, the data packets are sorted by time of arrival.
 
